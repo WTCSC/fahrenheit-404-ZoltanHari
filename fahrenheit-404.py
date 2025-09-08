@@ -1,16 +1,10 @@
 while True:
-    print("Hello, Please Select The Temperature You Want To Convert From")
-    print("Option 1: Fahrenheit")
-    print("Option 2: Celsius")
-    print("Option 3: Kelvin")
+    print("Hello, Please Select The Temperature You Want To Convert From\nOption 1: Fahrenheit\nOption 2: Celsius\nOption 3 Kelvin")
     from_temp = input("Please select Option 1, Option 2, or Option 3\n").lower()
-    print("Please, Select The Temperature You Would Like to Convert To")
-    print("Option 1: Fahrenheit")
-    print("Option 2: Celsius")
-    print("Option 3: Kelvin")
+    print("Please, Select The Temperature You Would Like to Convert To\nOption 1: Fahrenheit\nOption 2: Celsius\nOption 3 Kelvin")
     to_temp = input("Please select Option 1, Option 2, or Option 3\n").lower()
     if from_temp == to_temp:
-        print("Same Units Selected. Please Try Again")
+        print("Same Unit Selected. Please Try Again")
         continue
     try:
         temp = input("Enter the Temperature You Would Like to Convert\n")
