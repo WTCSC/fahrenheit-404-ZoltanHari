@@ -14,28 +14,22 @@ while True:
         continue
     match (from_temp, to_temp):
         case ("1", "2"):
-            conv_temp = (temp_float - 32)/ 1.8
-            fin_temp = round(conv_temp, 1)
+            fin_temp = round((temp_float - 32)/ 1.8, 1)
             print(f"{temp}° Fahrenheit in Celsius is {fin_temp}°")
         case ("1", "3"):
-            conv_temp = (temp_float - 32)/ 1.8 + 273.15
-            fin_temp = round(conv_temp, 1)
+            fin_temp = round((temp_float - 32)/ 1.8 + 273.15, 1)
             print(f"{temp}° Fahrenheit in Kelvin is {fin_temp} K")
         case ("2", "1"):
-            conv_temp = (temp_float + 32)* 1.8
-            fin_temp = round(conv_temp, 1)
+            fin_temp = round((temp_float + 32)* 1.8, 1)
             print(f"{temp}° Celsius in Fahrenheit is {fin_temp}°")
         case ("2", "3"):
-            conv_temp = (temp_float + 273.15)
-            fin_temp = round(conv_temp, 1)
+            fin_temp = round((temp_float + 273.15), 1)
             print(f"{temp}° Celsius in Kelvin is {fin_temp} K")
         case ("3", "1"):
-            conv_temp = (temp_float - 273.15)* 1.8 + 32
-            fin_temp = round(conv_temp, 1)
+            fin_temp = round((temp_float - 273.15)* 1.8 + 32, 1)
             print(f"{temp} K in Fahrenheit is {fin_temp}°")
         case ("3", "2"):
-            conv_temp = (temp_float - 273.15)
-            fin_temp = round(conv_temp, 1)
+            fin_temp = round((temp_float - 273.15), 1)
             print(f"{temp} K in Celsius is {fin_temp}°")
         case _: 
             print("Invalid Option")
