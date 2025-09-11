@@ -1,5 +1,5 @@
 while True:
-    print("Hello, Please Select The Temperature You Want To Convert From\nOption 1: Fahrenheit\nOption 2: Celsius\nOption 3 Kelvin")
+    print("Hello, Welcome to the Temperature Conversion Bot\nPlease Select The Temperature You Want To Convert From\nOption 1: Fahrenheit\nOption 2: Celsius\nOption 3 Kelvin")
     from_temp = input("Please select Option 1, Option 2, or Option 3\n").lower()
     print("Please, Select The Temperature You Would Like to Convert To\nOption 1: Fahrenheit\nOption 2: Celsius\nOption 3 Kelvin")
     to_temp = input("Please select Option 1, Option 2, or Option 3\n").lower()
